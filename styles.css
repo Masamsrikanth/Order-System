@@ -1,0 +1,180 @@
+/* styles.css */
+
+/* Reset some default browser styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    margin-left: 20px;
+}
+
+.navbar .nav-links {
+    display: flex;
+}
+
+.navbar .nav-links li {
+    margin: 0 10px;
+}
+
+.navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem;
+    transition: background-color 0.3s;
+}
+
+.navbar .nav-links a:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('https://source.unsplash.com/1600x900/?restaurant');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+    position: relative;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Adds a dark overlay */
+    z-index: 1;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: auto;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero .btn {
+    background-color: #ff4b2b;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.hero .btn:hover {
+    background-color: #ff3a1b;
+    transform: scale(1.05); /* Slightly enlarges button on hover */
+}
+
+/* Menu Section */
+.menu {
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+.menu .container {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.menu h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.menu-item {
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.menu-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.menu-item p {
+    margin-bottom: 1rem;
+}
+
+.menu-item .price {
+    font-weight: bold;
+    color: #ff4b2b;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.contact .container {
+    max-width: 600px;
+    margin: auto;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.contact p {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.footer p {
+    margin: 0;
+}
